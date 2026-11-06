@@ -1,0 +1,92 @@
+{
+  "target_classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "feature_names": [
+    "Hour",
+    "Time_Cat_Encoded",
+    "Weather_Cat_Encoded",
+    "Road_Cat_Encoded",
+    "Cluster_Risk_Score"
+  ],
+  "train_records": 5175,
+  "test_records": 1294,
+  "total_records": 6469,
+  "model_comparisons": {
+    "Random Forest": {
+      "Accuracy": 0.8416,
+      "Precision": 0.8564,
+      "Recall": 0.8416,
+      "F1_Score": 0.8442
+    },
+    "Logistic Regression": {
+      "Accuracy": 0.7852,
+      "Precision": 0.7975,
+      "Recall": 0.7852,
+      "F1_Score": 0.7881
+    },
+    "Decision Tree (ID3)": {
+      "Accuracy": 0.8346,
+      "Precision": 0.845,
+      "Recall": 0.8346,
+      "F1_Score": 0.8368
+    },
+    "k-Nearest Neighbors (k-NN)": {
+      "Accuracy": 0.8338,
+      "Precision": 0.8425,
+      "Recall": 0.8338,
+      "F1_Score": 0.8356
+    },
+    "Naive Bayes (Gaussian)": {
+      "Accuracy": 0.7117,
+      "Precision": 0.6956,
+      "Recall": 0.7117,
+      "F1_Score": 0.6763
+    },
+    "Support Vector Machine (SVM)": {
+      "Accuracy": 0.8315,
+      "Precision": 0.8441,
+      "Recall": 0.8315,
+      "F1_Score": 0.8343
+    }
+  },
+  "rf_metrics": {
+    "Accuracy": 0.8416,
+    "Precision": 0.8564,
+    "Recall": 0.8416,
+    "F1_Score": 0.8442
+  },
+  "confusion_matrix": [
+    [
+      281,
+      25,
+      5
+    ],
+    [
+      61,
+      376,
+      19
+    ],
+    [
+      55,
+      40,
+      432
+    ]
+  ],
+  "feature_importances": {
+    "Hour": 0.3981205214101227,
+    "Time_Cat_Encoded": 0.4546993597075216,
+    "Weather_Cat_Encoded": 0.030093821276705603,
+    "Road_Cat_Encoded": 0.06363593645420802,
+    "Cluster_Risk_Score": 0.05345036115144195
+  },
+  "permutation_importances": {
+    "Hour": 0.1353941267387944,
+    "Time_Cat_Encoded": 0.31143740340030907,
+    "Weather_Cat_Encoded": 0.008655332302936625,
+    "Road_Cat_Encoded": 0.02040185471406488,
+    "Cluster_Risk_Score": 0.003863987635239541
+  }
+}

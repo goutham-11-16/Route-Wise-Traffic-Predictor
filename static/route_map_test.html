@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d918c65f1b9057bd48714318917a8711 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d918c65f1b9057bd48714318917a8711" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d918c65f1b9057bd48714318917a8711 = L.map(
+                "map_d918c65f1b9057bd48714318917a8711",
+                {
+                    center: [28.6222, 77.2231],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_57e9908e5277ab73750190f84b8131d2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_57e9908e5277ab73750190f84b8131d2.addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+            var circle_baaee95adef6a023727dd82ddf172b5d = L.circle(
+                [28.673839333333333, 77.1691646238532],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1071, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_0fda685d155b42fbc395b64e6dd48628 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_af5f71cd8d3bf7c06853f0f27e8eede5 = $(`<div id="html_af5f71cd8d3bf7c06853f0f27e8eede5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #1</b><br>             <b>Zone Risk Index:</b> 1.79 / 3.0<br>             <b>Location:</b> 28.6738, 77.1692<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_0fda685d155b42fbc395b64e6dd48628.setContent(html_af5f71cd8d3bf7c06853f0f27e8eede5);
+            
+        
+
+        circle_baaee95adef6a023727dd82ddf172b5d.bindPopup(popup_0fda685d155b42fbc395b64e6dd48628)
+        ;
+
+        
+    
+    
+            var circle_e21ccb24e19b768836d3693066c862aa = L.circle(
+                [28.638818135559923, 77.39327738506877],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1157, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_2d8bfe9e63785594f5cea562ef359259 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f562aaef99690a27bb052f84a8e4a56 = $(`<div id="html_6f562aaef99690a27bb052f84a8e4a56" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #2</b><br>             <b>Zone Risk Index:</b> 1.93 / 3.0<br>             <b>Location:</b> 28.6388, 77.3933<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_2d8bfe9e63785594f5cea562ef359259.setContent(html_6f562aaef99690a27bb052f84a8e4a56);
+            
+        
+
+        circle_e21ccb24e19b768836d3693066c862aa.bindPopup(popup_2d8bfe9e63785594f5cea562ef359259)
+        ;
+
+        
+    
+    
+            var circle_f3c6aef53a82d5544df1b42b27a02170 = L.circle(
+                [28.518216086065575, 77.07947268032787],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1074, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_dc0549995e3bc1e1e0b6c1b292893b55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f7ecb73c7125a2fe86d5ca11d103401 = $(`<div id="html_2f7ecb73c7125a2fe86d5ca11d103401" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #3</b><br>             <b>Zone Risk Index:</b> 1.79 / 3.0<br>             <b>Location:</b> 28.5182, 77.0795<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_dc0549995e3bc1e1e0b6c1b292893b55.setContent(html_2f7ecb73c7125a2fe86d5ca11d103401);
+            
+        
+
+        circle_f3c6aef53a82d5544df1b42b27a02170.bindPopup(popup_dc0549995e3bc1e1e0b6c1b292893b55)
+        ;
+
+        
+    
+    
+            var circle_6545f29bf8acfc535aa1ce95b076064d = L.circle(
+                [28.38712247342995, 77.34524599033817],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1127, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_c0cbe92f3a101b6039bad66b479ec693 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5cb8b44a8e4971f8e4a336bc72cdadf2 = $(`<div id="html_5cb8b44a8e4971f8e4a336bc72cdadf2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #4</b><br>             <b>Zone Risk Index:</b> 1.88 / 3.0<br>             <b>Location:</b> 28.3871, 77.3452<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_c0cbe92f3a101b6039bad66b479ec693.setContent(html_5cb8b44a8e4971f8e4a336bc72cdadf2);
+            
+        
+
+        circle_6545f29bf8acfc535aa1ce95b076064d.bindPopup(popup_c0cbe92f3a101b6039bad66b479ec693)
+        ;
+
+        
+    
+    
+            var circle_c47d912d7cfe5a0a7101f3b04a0cb4dc = L.circle(
+                [28.571632850543477, 77.37490673641304],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1115, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_0ac1f7d3a97198cf344b85cd388f627d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c7abae7e815f844fdeb224cab933cb6 = $(`<div id="html_2c7abae7e815f844fdeb224cab933cb6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #5</b><br>             <b>Zone Risk Index:</b> 1.86 / 3.0<br>             <b>Location:</b> 28.5716, 77.3749<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_0ac1f7d3a97198cf344b85cd388f627d.setContent(html_2c7abae7e815f844fdeb224cab933cb6);
+            
+        
+
+        circle_c47d912d7cfe5a0a7101f3b04a0cb4dc.bindPopup(popup_0ac1f7d3a97198cf344b85cd388f627d)
+        ;
+
+        
+    
+    
+            var circle_07cafa6f626072bc8200e63b81f08e1d = L.circle(
+                [28.765853368029738, 77.08033420817844],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1046, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_dc524427ce0e64d8209a508a191585ef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_30a36e0c68f6d24ed4add2ed3c821969 = $(`<div id="html_30a36e0c68f6d24ed4add2ed3c821969" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #6</b><br>             <b>Zone Risk Index:</b> 1.74 / 3.0<br>             <b>Location:</b> 28.7659, 77.0803<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_dc524427ce0e64d8209a508a191585ef.setContent(html_30a36e0c68f6d24ed4add2ed3c821969);
+            
+        
+
+        circle_07cafa6f626072bc8200e63b81f08e1d.bindPopup(popup_dc524427ce0e64d8209a508a191585ef)
+        ;
+
+        
+    
+    
+            var circle_520431034ccaedf0a566c00c8ec962ca = L.circle(
+                [28.594015228136882, 77.10064584410647],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1108, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_46a6e2eb9194e79ecd8db3cafe371d77 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_56492034f9b50f4e5d0a471f684b04b4 = $(`<div id="html_56492034f9b50f4e5d0a471f684b04b4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #7</b><br>             <b>Zone Risk Index:</b> 1.85 / 3.0<br>             <b>Location:</b> 28.5940, 77.1006<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_46a6e2eb9194e79ecd8db3cafe371d77.setContent(html_56492034f9b50f4e5d0a471f684b04b4);
+            
+        
+
+        circle_520431034ccaedf0a566c00c8ec962ca.bindPopup(popup_46a6e2eb9194e79ecd8db3cafe371d77)
+        ;
+
+        
+    
+    
+            var circle_bbc3e399b5f1cfc6b6f421b62448f542 = L.circle(
+                [28.624424746770025, 77.24305515503876],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1168, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_cc413cb7effc417bb4f11a87bee5ea67 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e44edff7372162685613ae5eae91d4d3 = $(`<div id="html_e44edff7372162685613ae5eae91d4d3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #8</b><br>             <b>Zone Risk Index:</b> 1.95 / 3.0<br>             <b>Location:</b> 28.6244, 77.2431<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_cc413cb7effc417bb4f11a87bee5ea67.setContent(html_e44edff7372162685613ae5eae91d4d3);
+            
+        
+
+        circle_bbc3e399b5f1cfc6b6f421b62448f542.bindPopup(popup_cc413cb7effc417bb4f11a87bee5ea67)
+        ;
+
+        
+    
+    
+            var circle_966514d49d8246d99ec16a194cb74720 = L.circle(
+                [28.576802122743683, 77.03668974729241],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1195, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_a32b80dd16de67c8b6d6165c2e7ca22f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32069c673f09d9f4dc6b45a334b546e8 = $(`<div id="html_32069c673f09d9f4dc6b45a334b546e8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #9</b><br>             <b>Zone Risk Index:</b> 1.99 / 3.0<br>             <b>Location:</b> 28.5768, 77.0367<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_a32b80dd16de67c8b6d6165c2e7ca22f.setContent(html_32069c673f09d9f4dc6b45a334b546e8);
+            
+        
+
+        circle_966514d49d8246d99ec16a194cb74720.bindPopup(popup_a32b80dd16de67c8b6d6165c2e7ca22f)
+        ;
+
+        
+    
+    
+            var circle_1f7b1d66c273be5a8e68ed5f976669cc = L.circle(
+                [28.456765244019138, 77.33487998564593],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1016, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_623e4e84704a15d3bdea9ec46861cc97 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7ae499931ab8d3df7484a06017303071 = $(`<div id="html_7ae499931ab8d3df7484a06017303071" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #10</b><br>             <b>Zone Risk Index:</b> 1.69 / 3.0<br>             <b>Location:</b> 28.4568, 77.3349<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_623e4e84704a15d3bdea9ec46861cc97.setContent(html_7ae499931ab8d3df7484a06017303071);
+            
+        
+
+        circle_1f7b1d66c273be5a8e68ed5f976669cc.bindPopup(popup_623e4e84704a15d3bdea9ec46861cc97)
+        ;
+
+        
+    
+    
+            var circle_bc7333da20707db15eb251b68deadc1b = L.circle(
+                [28.589546652996845, 77.19983090536277],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1142, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_61c8839af2b1bdacbe46e0a9498626f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d53f707433bfe1e2abc0322307230d7d = $(`<div id="html_d53f707433bfe1e2abc0322307230d7d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #11</b><br>             <b>Zone Risk Index:</b> 1.90 / 3.0<br>             <b>Location:</b> 28.5895, 77.1998<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_61c8839af2b1bdacbe46e0a9498626f1.setContent(html_d53f707433bfe1e2abc0322307230d7d);
+            
+        
+
+        circle_bc7333da20707db15eb251b68deadc1b.bindPopup(popup_61c8839af2b1bdacbe46e0a9498626f1)
+        ;
+
+        
+    
+    
+            var circle_1601f6a64f5471e3583177b69919ddbb = L.circle(
+                [28.469335400662253, 77.0018440794702],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1166, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_97843c314472360d15fe30e618a59f78 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee4ead9becd70abaaa7788a16e0b4948 = $(`<div id="html_ee4ead9becd70abaaa7788a16e0b4948" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #12</b><br>             <b>Zone Risk Index:</b> 1.94 / 3.0<br>             <b>Location:</b> 28.4693, 77.0018<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_97843c314472360d15fe30e618a59f78.setContent(html_ee4ead9becd70abaaa7788a16e0b4948);
+            
+        
+
+        circle_1601f6a64f5471e3583177b69919ddbb.bindPopup(popup_97843c314472360d15fe30e618a59f78)
+        ;
+
+        
+    
+    
+            var circle_ca1fc574230a5e2479b1ba01d70ed444 = L.circle(
+                [28.684094291411043, 77.24465659509202],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1154, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_827b3d328d457086c3a68562350fbc9f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_644f7bd331b4e13e6f56b9ef6ece65e2 = $(`<div id="html_644f7bd331b4e13e6f56b9ef6ece65e2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #13</b><br>             <b>Zone Risk Index:</b> 1.92 / 3.0<br>             <b>Location:</b> 28.6841, 77.2447<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_827b3d328d457086c3a68562350fbc9f.setContent(html_644f7bd331b4e13e6f56b9ef6ece65e2);
+            
+        
+
+        circle_ca1fc574230a5e2479b1ba01d70ed444.bindPopup(popup_827b3d328d457086c3a68562350fbc9f)
+        ;
+
+        
+    
+    
+            var circle_d475c010b397d4ff4667cc6fd11d58ab = L.circle(
+                [28.695477002450982, 77.39568310294118],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1113, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_089ef75a3c3f664745e5efa4d41cfe63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_574365d37d01970ceb48cc59c293beb3 = $(`<div id="html_574365d37d01970ceb48cc59c293beb3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #14</b><br>             <b>Zone Risk Index:</b> 1.86 / 3.0<br>             <b>Location:</b> 28.6955, 77.3957<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_089ef75a3c3f664745e5efa4d41cfe63.setContent(html_574365d37d01970ceb48cc59c293beb3);
+            
+        
+
+        circle_d475c010b397d4ff4667cc6fd11d58ab.bindPopup(popup_089ef75a3c3f664745e5efa4d41cfe63)
+        ;
+
+        
+    
+    
+            var circle_6cbbeb96033033085753f01ebd589e45 = L.circle(
+                [28.695902118393235, 77.0911565179704],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1180, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_b740759cbca083faa03fe5643ccae564 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f85d86fbcaef25e09908f4f5ef58af26 = $(`<div id="html_f85d86fbcaef25e09908f4f5ef58af26" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #15</b><br>             <b>Zone Risk Index:</b> 1.97 / 3.0<br>             <b>Location:</b> 28.6959, 77.0912<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_b740759cbca083faa03fe5643ccae564.setContent(html_f85d86fbcaef25e09908f4f5ef58af26);
+            
+        
+
+        circle_6cbbeb96033033085753f01ebd589e45.bindPopup(popup_b740759cbca083faa03fe5643ccae564)
+        ;
+
+        
+    
+    
+            var circle_df8978ff891b56baa839973ce4412576 = L.circle(
+                [28.639137516483515, 77.32662550915751],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1090, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_65bdc4cbc6d3758e62339f0fcfd0bf8f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4607ee443ff6914544c57e6cbf992b0d = $(`<div id="html_4607ee443ff6914544c57e6cbf992b0d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #16</b><br>             <b>Zone Risk Index:</b> 1.82 / 3.0<br>             <b>Location:</b> 28.6391, 77.3266<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_65bdc4cbc6d3758e62339f0fcfd0bf8f.setContent(html_4607ee443ff6914544c57e6cbf992b0d);
+            
+        
+
+        circle_df8978ff891b56baa839973ce4412576.bindPopup(popup_65bdc4cbc6d3758e62339f0fcfd0bf8f)
+        ;
+
+        
+    
+    
+            var circle_1574171e716fa91b0d6c658ad3fdedec = L.circle(
+                [28.400503377862595, 77.28247366030534],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1129, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_ea2718cf9abbfddbb0156f1320cbac5f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_70bcb1b5511ca3397384a07f16558e85 = $(`<div id="html_70bcb1b5511ca3397384a07f16558e85" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #17</b><br>             <b>Zone Risk Index:</b> 1.88 / 3.0<br>             <b>Location:</b> 28.4005, 77.2825<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_ea2718cf9abbfddbb0156f1320cbac5f.setContent(html_70bcb1b5511ca3397384a07f16558e85);
+            
+        
+
+        circle_1574171e716fa91b0d6c658ad3fdedec.bindPopup(popup_ea2718cf9abbfddbb0156f1320cbac5f)
+        ;
+
+        
+    
+    
+            var circle_40c953a48e11c67013c8791ca3a253c8 = L.circle(
+                [28.75763757777778, 77.13890753580247],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1155, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_9f1bdb1a4b5349d09e3fcf47b8a1a067 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_886219b68a2681adfb788c9f256b09bd = $(`<div id="html_886219b68a2681adfb788c9f256b09bd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #18</b><br>             <b>Zone Risk Index:</b> 1.93 / 3.0<br>             <b>Location:</b> 28.7576, 77.1389<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_9f1bdb1a4b5349d09e3fcf47b8a1a067.setContent(html_886219b68a2681adfb788c9f256b09bd);
+            
+        
+
+        circle_40c953a48e11c67013c8791ca3a253c8.bindPopup(popup_9f1bdb1a4b5349d09e3fcf47b8a1a067)
+        ;
+
+        
+    
+    
+            var circle_0c584270ef39fbbf3810b75cd445adea = L.circle(
+                [28.517369108695654, 77.38632450815217],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1160, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_e372b213f40aaa2e26b219bebe50565d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d8bc06ed5a814687a9a3444b0d370196 = $(`<div id="html_d8bc06ed5a814687a9a3444b0d370196" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #19</b><br>             <b>Zone Risk Index:</b> 1.93 / 3.0<br>             <b>Location:</b> 28.5174, 77.3863<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_e372b213f40aaa2e26b219bebe50565d.setContent(html_d8bc06ed5a814687a9a3444b0d370196);
+            
+        
+
+        circle_0c584270ef39fbbf3810b75cd445adea.bindPopup(popup_e372b213f40aaa2e26b219bebe50565d)
+        ;
+
+        
+    
+    
+            var circle_2b9328d8b7e5c09eb9aaee539154fc0f = L.circle(
+                [28.43261258909091, 77.04624733818181],
+                {"bubblingMouseEvents": true, "color": "#e65c00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e65c00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1165, "stroke": true, "weight": 1.5}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+        var popup_6a66590815c01cdc7b8d6f0058b054fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_60695c7b0a1542c037dead1b2de34b4b = $(`<div id="html_60695c7b0a1542c037dead1b2de34b4b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: sans-serif; min-width: 160px;">             <b style="color: #e65c00; font-size: 13px;">Accident Hotspot #20</b><br>             <b>Zone Risk Index:</b> 1.94 / 3.0<br>             <b>Location:</b> 28.4326, 77.0462<br>             <span style="font-size: 11px; color: #555;">K-Means Spatial Cluster Center</span>         </div>         </div>`)[0];
+                popup_6a66590815c01cdc7b8d6f0058b054fc.setContent(html_60695c7b0a1542c037dead1b2de34b4b);
+            
+        
+
+        circle_2b9328d8b7e5c09eb9aaee539154fc0f.bindPopup(popup_6a66590815c01cdc7b8d6f0058b054fc)
+        ;
+
+        
+    
+    
+            var poly_line_55a60af9e48d5761d215be3211e6da0a = L.polyline(
+                [[28.6315, 77.2167], [28.630238, 77.216526], [28.628984, 77.216364], [28.627747, 77.216225], [28.626535, 77.216123], [28.625354, 77.216067], [28.624212, 77.216067], [28.623115, 77.216132], [28.622069, 77.216272], [28.621078, 77.216492], [28.620146, 77.216797], [28.619276, 77.217192], [28.618469, 77.217679], [28.617726, 77.218259], [28.617046, 77.21893], [28.616428, 77.219692], [28.615869, 77.220539], [28.615365, 77.221466], [28.614912, 77.222467], [28.614504, 77.223533], [28.614135, 77.224656], [28.613797, 77.225825], [28.613484, 77.22703], [28.613188, 77.228259], [28.6129, 77.2295]],
+                {"bubblingMouseEvents": true, "color": "#27ae60", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#27ae60", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+            poly_line_55a60af9e48d5761d215be3211e6da0a.bindTooltip(
+                `<div>
+                     Route: 3.02 km | Risk: LOW RISK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5fe2ee333e12437c0a5d7587be8ba1c4 = L.marker(
+                [28.6315, 77.2167],
+                {
+}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+            var icon_db1b19c619e8ff32f698a53a6d69baf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20011dee4c06c070efd3ce799d7e15f4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c72ab3cf37fbbc218f0db6fc7f23ef28 = $(`<div id="html_c72ab3cf37fbbc218f0db6fc7f23ef28" style="width: 100.0%; height: 100.0%;">     <div style="font-family: sans-serif;">         <b style="color: #27ae60;">🟢 Start Point</b><br>         <b>Connaught Place Delhi</b><br>         Coords: 28.6315, 77.2167     </div>     </div>`)[0];
+                popup_20011dee4c06c070efd3ce799d7e15f4.setContent(html_c72ab3cf37fbbc218f0db6fc7f23ef28);
+            
+        
+
+        marker_5fe2ee333e12437c0a5d7587be8ba1c4.bindPopup(popup_20011dee4c06c070efd3ce799d7e15f4)
+        ;
+
+        
+    
+    
+            marker_5fe2ee333e12437c0a5d7587be8ba1c4.bindTooltip(
+                `<div>
+                     Start: Connaught Place Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fe2ee333e12437c0a5d7587be8ba1c4.setIcon(icon_db1b19c619e8ff32f698a53a6d69baf0);
+            
+    
+            var marker_775b9981b940fc9ec88688eabf6de2e9 = L.marker(
+                [28.6129, 77.2295],
+                {
+}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+    
+            var icon_a20616fb258c1c7a6ba80029d090c387 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0693fc6b86f969d3f018a8c8729a5bb0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_239b7120cd2c419cfc00cd9cfc975a93 = $(`<div id="html_239b7120cd2c419cfc00cd9cfc975a93" style="width: 100.0%; height: 100.0%;">     <div style="font-family: sans-serif;">         <b style="color: #c0392b;">🔴 Destination</b><br>         <b>India Gate Delhi</b><br>         Coords: 28.6129, 77.2295     </div>     </div>`)[0];
+                popup_0693fc6b86f969d3f018a8c8729a5bb0.setContent(html_239b7120cd2c419cfc00cd9cfc975a93);
+            
+        
+
+        marker_775b9981b940fc9ec88688eabf6de2e9.bindPopup(popup_0693fc6b86f969d3f018a8c8729a5bb0)
+        ;
+
+        
+    
+    
+            marker_775b9981b940fc9ec88688eabf6de2e9.bindTooltip(
+                `<div>
+                     Destination: India Gate Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_775b9981b940fc9ec88688eabf6de2e9.setIcon(icon_a20616fb258c1c7a6ba80029d090c387);
+            
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_d918c65f1b9057bd48714318917a8711);
+        
+</script>
+</html>
